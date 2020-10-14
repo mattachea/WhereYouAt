@@ -1,0 +1,305 @@
+/* CSS Reset */
+* { margin:0; padding:0; font-size:100%; line-height:1; }
+
+/* this is very very bad style but bootstrap is hellspawn so */
+* { font-family: futura-pt, sans-serif !important;}
+
+body {
+    margin: 0 auto;
+    font-family: futura-pt, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 40px;
+    display: inline;
+}
+
+input {
+    display: block;
+    margin: 5px;
+    font-family: futura-pt, sans-serif;
+    padding: 0 0 0 5px;
+}
+
+.login-wrapper {
+	width: 100%;
+	height: 100vh;
+	padding: 25% 0;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.login-div {
+    display: inline-block;
+}
+
+.login-form {
+	display: flex;
+	flex-flow: column;
+	padding: 5px;
+	vertical-align: top;
+}
+
+.login-buttons {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 5%;
+}
+
+.login-buttons-single {
+	display: grid;
+	grid-template-columns: auto;
+}
+
+.wya-button {
+	background: none;
+	outline: none;
+	border: #989898 solid thin;
+	padding: 3px 10%;
+	float: left;
+	text-transform: lowercase;
+	font-size: 15px;
+	color: black;
+}
+
+.wya-button:hover {
+	background: rgba(187, 167, 255, 0.25);
+}
+
+.wya-button:active {
+	background: rgba(187, 167, 255, 0.5);
+}
+
+.login-form > input {
+	margin-bottom: 3px;
+}
+
+.logo {
+	display: flex;
+	border-left: medium solid purple;
+	padding: 0 10px;
+	text-align: left;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.logo-text {
+	text-transform: uppercase;
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	line-height: 40px;
+	font-size: 40px;
+	display: inline;
+}
+
+.login-div {
+	width: 340px;
+	display: grid;
+	grid-template-columns: auto 155px;
+	align-self: flex-end;
+}
+
+.login-side {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-side > img {
+    display: block;
+}
+
+.login-message {
+	padding: 3px;
+	text-align: right;
+}
+
+.error-message {
+	padding: 3px;
+	text-align: right;
+	color: mediumpurple;
+}
+
+.privacy-form {
+	text-align: left;
+}
+
+.privacy-radios {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-items: end;
+	padding: 3px;
+}
+
+.privacy-radio-group > * {
+	display: inline-block;
+}
+
+.privacy-radio-group > label {
+	padding: 3px;
+	font-weight: 500;
+	text-transform: lowercase;
+}
+
+.wya-radio {
+	margin-top: -1px;
+	vertical-align: middle;
+}
+
+.mainContainer {
+	display: grid;
+	grid-template-columns: auto;
+	height: 100vh
+}
+
+.nav {
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+	position: relative;
+	z-index: 100;
+}
+
+.nav-link {
+	font-weight: 600;
+}
+
+.gm-style {
+	font-weight: 600 !important;
+}
+
+.side {
+	position: absolute;
+	right: 0;
+	background: rgba(255, 255, 255, 0.75);
+	height: 100vh;
+	box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, .1);
+	width: 25%;
+	overflow: scroll;
+}
+
+.side-header-text {
+	line-height: 75px;
+	text-transform: uppercase;
+	font-family: futura-pt, sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	display: inline;
+
+}
+
+.side-header {
+	text-align: center;
+	height: 75px;
+	border-radius: 0 0 25px 25px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .4);
+	padding: 0 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: fixed;
+	right: 0;
+	left: 75%;
+}
+
+.wyacard {
+	box-shadow: 2px 2px 5px 1px rgba(50, 0, 100, .4);
+	margin: 20px 10px;
+	height: 100px;
+	border-radius: 25px;
+	display: grid;
+	grid-template-columns: 100px auto;
+	background: white;
+}
+
+.card-list {
+	margin: 95px 0;
+}
+
+.pfp-container > img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.pfp-container {
+	padding: 10px;
+
+}
+
+.info {
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+.name-text {
+	font-family: futura-pt, sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.last-seen {
+	margin-top: 2px;
+}
+
+.last-seen-text {
+	font-family: futura-pt, sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.status {
+	margin-top: 5px;
+}
+
+.status-text {
+	font-family: futura-pt, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 25px 5px 0; /* bottom padding needed for letters like g and q */
+	color: #808080;
+	margin-bottom: 0;
+}
+
+.event-list {
+	margin: 95px 0;
+}
+
+.event-name {
+	box-shadow: 2px 2px 5px 1px rgba(50, 0, 100, .4);
+	margin: 20px 10px 0;
+	height: 50px;
+	border-radius: 25px 25px 0 0;
+	background: white;
+	text-align: center;
+	position: relative;
+	z-index: 6;
+}
+
+.event-name-text {
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.event-details {
+	box-shadow: 2px 2px 5px 1px rgba(50, 0, 100, .4);
+	margin: 0 10px;
+	height: 200px;
+	border-radius: 0 0 25px 25px;
+	background: white;
+	padding: 30px;
+	position: relative;
+	z-index: 5;
+}
+

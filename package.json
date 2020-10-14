@@ -1,0 +1,8 @@
+{
+  "name": "2019-group-GrOOSEp",
+  "version": "1.0.0",
+  "dependencies": {
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react": "latest"
+  }
+}
